@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style1.css">
+
+<head>
+    <title>CHRISTIXOL CHEMICALS AND DETERGENTS.</title>
+
+</head>
+
+<body>
+
+    <div class="bar">
+        <div class="logo">
+            <img src="christixollogo.jpg" alt="christixol logo">
+        </div>
+        <div class="company-name">
+            <h1>Christixol chemicals and detergents</h1>
+        </div>
+
+    </div>
+    <nav class="nav">
+        <ul>
+            <div class="topnav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+                <li><a href="about-us.html">About-us</a></li>
+            </div>
+        </ul>
+    </nav>
+
+
+    <main>
+        <section id="home">
+            <div class="content">
+
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 5</div>
+                        <img src="assets/image1.jpg" style="width:100%">
+                        <div class="text">pouring liquid soap, close-up view </div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 5</div>
+                        <img src="assets/image2.jpg" style="width:100%">
+                        <div class="text">Woman putting white clothes into the drum of a washing machine, front view.
+                            Washing dirty clothes in the washer
+                            Get this image for free</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 5</div>
+                        <img src="assets/image3.jpg" style="width:100%">
+                        <div class="text">Organic liquid detergent made from natural laundry soap</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="assets/image4.jpg" style="width:100%">
+                        <div class="text">Liquid detergent factory. Please see more of my photo and video clips factory
+                            for the production of detergent. Shallow DOFF.</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">5/ 5</div>
+                        <img src="assets/image5.jpg" style="width:100%">
+                        <div class="text">Liquid Detergent on Automated Production Line</div>
+                    </div>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+
+                <h1>Welcome to Christixol Chemicals and Detergents</h1>
+                <p>Your one-stop solution for premium cleaning and chemical products tailored to industrial, commercial,
+                    and domestic needs.</p>
+                <br>
+            </div>
+        </section>
+
+        <section>
+            <div class="header">
+                <h1>Goal, Mission & Vision </h1>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <div class="icon"></div>
+                    <div class="text-container">
+                        <h3>Goal </h3>
+                        <p>"Provide innovative and sustainable cleaning solutions."</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="icon"></div>
+                    <div class="text-container">
+                        <h3>Mission </h3>
+                        <p>"Deliver eco-friendly cleaning solutions with excellence."</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="icon"></div>
+                    <div class="text-container">
+                        <h3>Vision</h3>
+                        <p>: "Lead globally in sustainable cleaning innovations."</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="icon"></div>
+                    <div class="text-container">
+                        <h3>Our Team</h3>
+                        <p>Christixol Team is committed to providing innovative, eco-friendly cleaning solutions that
+                            prioritize quality, efficiency, and sustainability.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="bg-header">
+            </div>
+            <div class="header">
+                <h1>About-us</h1>
+
+            </div>
+            <div class="row">
+                <div class="content">
+                    <p>Christixol Chemical and Detergent Business is a leading producer of high-quality cleaning agents
+                        and chemical products tailored for schools, hospitals, hotels, and households.</p>
+                    <h1>Our Clients</h1>
+                    <Ol>
+                        <li>Joy hospital</li><br>
+                        <li>Little Mary Academy</li><br>
+                        <li>Newlife Maternity</li><br>
+                        <li>Households</li><br>
+
+                    </Ol>
+                    <div class="contact-info">
+                        <p><strong>Phone:</strong> +254718330652</p>
+                        <p><strong>info.christixol.co.ke</strong> <a></p>
+                        <p><strong>Email:</strong> <a
+                                href="mailto:christixol@detergents.com">christixol@detergents.com</a>
+                        </p>
+                        <p><strong>Website:</strong> <a href="https://www.domain.com" target="_blank">www.domain.com</a>
+                        </p>
+                        <br>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="assets/professional-image.jpg" alt=" Professional-image.jpg">
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+
+<!-- Footer -->
+<footer class="footer">
+    <!-- Contacts Column -->
+    <div class="footer-column">
+        <h3>Contact Us</h3>
+        <ol>
+            <li>Phone: +254 718330652</li><br>
+            <li>Email: contact@christixol.com</li>
+            <li>Address: Wangige, Nairobi, Kenya</li>
+        </ol>
+    </div>
+
+    <!-- Platforms Column -->
+    <div class="footer-column">
+        <h3>Platforms</h3>
+        <ol>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+        </ol>
+    </div>
+
+    <!-- Location Column -->
+    <div class="footer-column">
+        <h3>Our Location</h3>
+        <!-- Map Embed -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.733167403552!2d36.70740851720651!3d-1.2411462000000017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1ba6d19d3a91%3A0x4dc74a40163457d5!2sWangige!5e0!3m2!1sen!2ske!4v1696340183287!5m2!1sen!2ske"
+            allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+</footer>
+<!-- Main Content -->
+<div class="content">
+    <p>&COPY;2025 christixol chemicals solution.All rights reserve</p>
+</div>
+
+</html>
